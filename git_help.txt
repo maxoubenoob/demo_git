@@ -1,0 +1,38 @@
+pwd 	"Voir où je suis"
+ls  	"Voir les éléments présent dans le dossier afficher par pwd"
+cd 	"Aller dans un dossier"
+cd .. 	"Remonter dans un dossier"
+mkdir 	"Créer un dossier"
+touch 	"Créer un fichier"
+vim	"Écrire un fichier"
+vim :w	"Sauvegarder dans vim"
+vim :q	"Quitter vim"
+
+git init 	"Active un dossier comme repository Git"
+
+	 	"Pour gérer un repository, Git génère un index 
+		de tous les fichiers dont il doit faire le suivi. 
+git add		Lorsque vous créez un fichier dans un repository, 
+		vous devez donc l'ajouter à l'index Git à l'aide de la 
+		commande git add nomDeVotreFichier.extension."
+
+git status	"Inspecter les futurs0 fichiers à commit"
+
+git commit 	"Enregistre vos modifications"
+
+git commit -m	"Enregistre vos modifications avec un commentaire"
+
+git log 	"Affiche la liste de tous les commits que vous avez réalisés !"
+
+
+git checkout SHADuCommit 	"Vous positionne sur un commit"
+
+git checkout master		"Revenir à votre branche principale (au commit le plus récent)"
+	
+git revert SHADuCommit		"Créer un nouveau commit qui fait l'inverse du précédent"
+
+git commit --amend -m "message"	"Change le message d'un commit"
+
+git reset --hard? 		"Annuler tous les changements que je n'ai pas encore commités"
+
+git clone lienFourniParGitHub 	"Copie un repository de GitHub"
